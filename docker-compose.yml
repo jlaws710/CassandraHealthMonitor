@@ -1,0 +1,15 @@
+version: '4.1'
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+    expose:
+      - "9042"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - "./cassandra-init.sh:/cassandra-init.sh"
+    command: "sh /cassandra-init.sh"
+    environment:
+      CASSANDRA_BROADCAST_ADDRESS: 127.0.0.1

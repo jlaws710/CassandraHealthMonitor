@@ -1,0 +1,7 @@
+app-cassandra:
+  contactPoints: 127.0.0.1
+  keyspaceName: test
+  localDatacenter: datacenter1
+  schemaAction: create_if_not_exists
+server:
+  port: 8000
