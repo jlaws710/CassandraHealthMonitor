@@ -2,7 +2,7 @@
 Cassandra Health Monitor
 
 * This application monitors the health of Cassandra nodes
-  This application was created using Java, Spring-Boot, Cassandra, and Docker.
+* This application was created using Java, Spring-Boot, Cassandra, and Docker.
 
 # Getting Started
 
